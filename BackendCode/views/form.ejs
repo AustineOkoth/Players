@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Fantacy</title>
+</head>
+
+<style>
+    input {
+        margin: 10px;
+        padding: 10px;
+        width : 250px;
+
+    }
+    button{
+        width: 300px;
+        padding: 10px;
+        color: white;
+        background-color: skyblue;
+        border: 0px;
+    }
+    form{
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding: 40px;
+        border : 50px solid whitesmoke;
+    }
+    body{
+        background-color: white;
+    }
+</style>
+
+
+<body>
+    <form id="add-form" method="post" action="/player/add" autocomplete="on">
+        <h2 style="color:Skyblue; font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Kindly fill all this fields</h2>
+        <input name="name" type="text" placeholder="Enter Player Name" /><br>
+        <input name="position" type="text" placeholder="Enter Position" /><br>
+        <input name="touchdown" type="number" placeholder="Touchdown Thrown" /><br>
+        <input name="rushing" type="number" placeholder="Rushing Yards" /><br>
+        <input name="sacks" type="number" placeholder="Sacks" /><br>
+        <input name="goalmade" type="number" placeholder="Field Goal Made" /><br>
+        <input name="goalmissed" type="number" placeholder="Field Goal Missed" /><br>
+        <input name="catchesmade" type="number" placeholder="Catches Made" /><br>
+
+        
+      <form action="/player/add" method="post">
+        <h2><button type="submit" >ADD PLAYER</button></h2>
+      </form>
+
+    </form>
+</body>
+
+</html>
